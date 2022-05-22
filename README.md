@@ -23,6 +23,15 @@ This repository contains the python code for a very basic Wiktionary lookup of t
       classify-word
       classify-words
 
+To classify a word:
+
+    python3 -m detect_language classify-word  --word="hello" --language="English"
+    python3 -m detect_language classify-word  --word="hwaet" --language="Old English"
+
+To classify a list of words in a file (we tokenize the words by comma, space, newline etc.):
+
+    python3 -m detect_language classify-words --word-file=/home/martin/test.txt --language=latin
+
 # Demo
 [![asciicast](https://asciinema.org/a/LNdUrCjvAFeRkZ1X9lCKsEteX.svg)](https://asciinema.org/a/LNdUrCjvAFeRkZ1X9lCKsEteX)
 
